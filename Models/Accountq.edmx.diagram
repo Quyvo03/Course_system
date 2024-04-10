@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6b1bf92b48cd41ef99189f4274b39dd1" Name="Diagram1">
+        <EntityTypeShape EntityType="QLKHocModel.Activities" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.Class" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.Learn_class" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.Semester" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.Staff" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.Student" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.Subjects" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.Teacher_subject" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.Teachers" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLKHocModel.Users" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="QLKHocModel.FK__Activitie__staff__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKHocModel.FK__Class__semester___403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKHocModel.FK__Learn_cla__class__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKHocModel.FK__Learn_cla__stude__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKHocModel.FK__Staff__user_id__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKHocModel.FK__Student__user_id__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKHocModel.FK__Teacher_s__subje__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKHocModel.FK__Teacher_s__teach__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="QLKHocModel.FK__Teachers__user_i__267ABA7A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

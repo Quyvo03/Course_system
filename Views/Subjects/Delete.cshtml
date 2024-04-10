@@ -1,0 +1,116 @@
+﻿@model WebApplication1.Models.Subjects
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+    <style>
+        /* CSS cho phần container */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CSS cho tiêu đề */
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* CSS cho phần Subjects */
+        h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        hr {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-top: 1px solid #ddd;
+        }
+
+        /* CSS cho form actions */
+        .form-actions {
+            margin-top: 20px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333;
+            }
+
+        .btn {
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                text-decoration: none;
+                color: #333;
+            }
+        /* CSS cho danh sách định nghĩa */
+        dl {
+            margin-bottom: 15px;
+        }
+
+            dl dt {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            dl dd {
+                margin-left: 0;
+                margin-bottom: 10px;
+                color: #777;
+            }
+
+    </style>
+</head>
+<body>
+    <form id="deleteForm" method="post">
+        <h3>Are you sure you want to delete this?</h3>
+        <div>
+            <h4>Subjects</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.SubjectName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.SubjectName)
+                </dd>
+
+            </dl>
+
+            @Html.AntiForgeryToken()
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
